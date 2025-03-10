@@ -1,339 +1,457 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-        <title>Isaac Costa - Portfolio</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                    <img src="assets/img/isaac.jpg" alt="photo" id="profile_photo">
-                            <!-- Insert your image, according to the example size of the portfolio -->
-                        </div>
-                    </div>
+    <title>Isaac Costa - Portfolio</title>
+  </head>
+  <body>
+    <header class="profile container">
+      <!-- Theme button -->
+      <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-                    <h2 class="profile__name">Isaac Costa Bandim</h2>
-                    <h3 class="profile__profession">Fullstack Developer</h3>
-
-                    <ul class="profile__social">
-                        <a href="https://www.instagram.com/isaaccostab/" target="_blank" class="profile__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/isaac-bandim-67929716a/" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://github.com/ibandim123" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">1,5</h3>
-                        <p class="profile__info-description">
-                            Years of <br> work
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">+5</h3>
-                        <p class="profile__info-description">
-                            Completed <br> projects
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number"> 3 </h3>
-                        <p class="profile__info-description">programming<br> languages</p>
-                    </div>
-                </div>
-
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a download="" href="assets/pdf/Isaac costa bandim.pdf" class="button">
-                        Download CV <i class="ri-download-line"></i>
-                    </a>
-
-                    <div class="profile__buttons-small">
-                        <!-- Insert a real number plus country code -->
-                        <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="button button__small button__gray">
-                            <i class="ri-whatsapp-line"></i>
-                        </a>
-                        
-                    </div>
-                </div>
+      <div class="profile__container grid">
+        <div class="profile__data">
+          <div class="profile__border">
+            <div class="profile__perfil">
+              <img src="assets/img/isaac.jpg" alt="photo" id="profile_photo" />
+              <!-- Insert your image, according to the example size of the portfolio -->
             </div>
-        </header>
+          </div>
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        Projects
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                        Skills
-                    </button>
-                </ul>
+          <h2 class="profile__name">Isaac Costa Bandim</h2>
+          <h3 class="profile__profession">
+            Fullstack Developer - Software Engineer
+          </h3>
 
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="assets/img/valletta.png" alt="" class="projects__img">
+          <ul class="profile__social">
+            <a
+              href="https://www.instagram.com/isaaccostab/"
+              target="_blank"
+              class="profile__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/isaac-bandim-67929716a/"
+              target="_blank"
+              class="profile__social-link"
+            >
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a
+              href="https://github.com/ibandim123"
+              target="_blank"
+              class="profile__social-link"
+            >
+              <i class="ri-github-line"></i>
+            </a>
+            <a
+              href="https://gitlab.com/isaac.bandim"
+              target="_blank"
+              class="profile__social-link"
+            >
+              <i class="ri-gitlab-line"></i>
+            </a>
+          </ul>
+        </div>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Otimize IT</span>
-                                    <h3 class="projects__title">Valleta Institute</h3>
-                                    <a href="https://www.institutovalletta.com.br/" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+        <div class="profile__info grid">
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">4+</h3>
+            <p class="profile__info-description">
+              Years of <br />
+              work
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+20</h3>
+            <p class="profile__info-description">
+              Completed <br />
+              projects
+            </p>
+          </div>
+          <div class="profile__info-group">
+            <h3 class="profile__info-number">+3</h3>
+            <p class="profile__info-description">
+              programming<br />
+              languages
+            </p>
+          </div>
+        </div>
 
-                        <article class="projects__card">
-                            <img src="assets/img/bianchetti.png" alt="" class="projects__img">
+        <div class="profile__buttons">
+          <!-- Insert your CV -->
+          <a
+            download=""
+            href="assets/pdf/Isaac costa bandim.pdf"
+            class="button"
+          >
+            Download CV <i class="ri-download-line"></i>
+          </a>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Otimize IT</span>
-                                    <h3 class="projects__title">Vinhos Bianchetti</h3>
-                                    <a href="https://www.vinhosbianchetti.com.br/" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+          <div class="profile__buttons-small">
+            <!-- Insert a real number plus country code -->
+            <a
+              href="https://api.whatsapp.com/send?phone=558798114913&text=Hello, more information!"
+              target="_blank"
+              class="button button__small button__gray"
+            >
+              <i class="ri-whatsapp-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-                        <article class="projects__card">
-                            <img src="assets/img/sellecta.png" alt="" class="projects__img">
+    <main class="main">
+      <section class="filters container">
+        <ul class="filters__content">
+          <button
+            class="filters__button filter-tab-active"
+            data-target="#projects"
+          >
+            Projects
+          </button>
+          <button class="filters__button" data-target="#skills">Skills</button>
+        </ul>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Re9 Agência</span>
-                                    <h3 class="projects__title">Sellecta</h3>
-                                    <a href="https://www.estilosellecta.com.br/" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+        <div class="filters__sections">
+          <div
+            class="projects__content grid filters__active"
+            data-content
+            id="projects"
+          >
+            <h3 class="flex justify-content-center">
+              In building...🚧 please await
+            </h3>
+            <article class="projects__card">
+              <!-- <img src="assets/img/valletta.png" alt="" class="projects__img" />
 
-                        <article class="projects__card">
-                            <img src="assets/img/blueberry.png" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Personal Project</span>
-                                    <h3 class="projects__title">BlueBerry Sci-fi Ocean Synthwave</h3>
-                                    <a href="https://github.com/ibandim123/vscode-blueberry-dark-theme" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        
-                    </div>
-
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">Frontend Web Technologies</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">HTML</h3>                                            
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">CSS</h3>                                            
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">JavaScript/ Typescript</h3>                                            
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">React</h3>
-                                           
-                                        </div>
-                                    </div>
-        
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Sass(learning)</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills__area">
-                            <h3 class="skills__title">Another Technologies</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">C ( language Programming )</h3>                                            
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Robotic ( Learning )</h3>                                            
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">IA ( learning )</h3>                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Office Package</h3>                                           
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Git</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills__area">
-                            <h3 class="skills__title">Backend Developer</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">PHP</h3>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MySQL</h3>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MongoDB</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Python</h3>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Node Js</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Otimize IT</span>
+                  <h3 class="projects__title">Valleta Institute</h3>
+                  <a
+                    href="https://www.institutovalletta.com.br/"
+                    class="projects__button button button__small"
+                  >
+                    <i class="ri-link"></i>
+                  </a>
                 </div>
-            </section>
-           
-        </main>
+              </div> -->
+            </article>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; Isaac Bandim. All rigths reserved
-            </span>
-        </footer>
+            <article class="projects__card">
+              <!-- <img
+                src="assets/img/bianchetti.png"
+                alt=""
+                class="projects__img"
+              />
 
-        <script src="assets/js/scripts.js"></script>
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Otimize IT</span>
+                  <h3 class="projects__title">Vinhos Bianchetti</h3>
+                  <a
+                    href="https://www.vinhosbianchetti.com.br/"
+                    class="projects__button button button__small"
+                  >
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div> -->
+            </article>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <article class="projects__card">
+              <!-- <img src="assets/img/sellecta.png" alt="" class="projects__img" />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Re9 Agência</span>
+                  <h3 class="projects__title">Sellecta</h3>
+                  <a
+                    href="https://www.estilosellecta.com.br/"
+                    class="projects__button button button__small"
+                  >
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div> -->
+            </article>
+
+            <article class="projects__card">
+              <!-- <img
+                src="assets/img/blueberry.png"
+                alt=""
+                class="projects__img"
+              />
+
+              <div class="projects__modal">
+                <div>
+                  <span class="projects__subtitle">Personal Project</span>
+                  <h3 class="projects__title">
+                    BlueBerry Sci-fi Ocean Synthwave
+                  </h3>
+                  <a
+                    href="https://github.com/ibandim123/vscode-blueberry-dark-theme"
+                    class="projects__button button button__small"
+                  >
+                    <i class="ri-link"></i>
+                  </a>
+                </div>
+              </div> -->
+            </article>
+          </div>
+
+          <div class="skills__content grid" data-content id="skills">
+            <div class="skills__area">
+              <h3 class="skills__title">Web Technologies</h3>
+
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">HTML, CSS</h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        CSS libs - PrimeNG, PrimeFlex, Tailwind, Bootstrap, SasS
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">CI/CD pipelines</h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        JS libraries - React, JQuery, Chart.js, Tesseract.js...
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__area">
+              <h3 class="skills__title">Mobile Technologies</h3>
+
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Expo Go</h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">React Native</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        Google and Apple deploy plataform
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        Android Studios - IDE mobile plataform
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__area">
+              <h3 class="skills__title">Other Technologies</h3>
+
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        Javascript/Typescript, Java and PHP
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        Git with Github,Gitlab and BitBucket
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">SQL</h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        Cloud Computer Services AWS and Azure
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        SGBD's: MySQL, Postgres, Oracle, MongoDB, MariaDB
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        Node.js, Angular, Vue.js, Symfhony, CodeIgniter,
+                        SpringBoot
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">
+                        Robotics and IoT: AutoDesk Fusion
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__area">
+              <h3 class="skills__title">Business Technologies</h3>
+
+              <div class="skills__box">
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Wordpress and Shopify</h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Google Analytics</h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">CEO pratics</h3>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__group">
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Office package</h3>
+                    </div>
+                  </div>
+
+                  <div class="skills__data">
+                    <i class="ri-checkbox-circle-line"></i>
+
+                    <div>
+                      <h3 class="skills__name">Project Management</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <span class="footer__copy">
+        &#169; Isaac Bandim. All rigths reserved
+      </span>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

@@ -145,6 +145,10 @@ body.dark-theme {
   gap: 1.5rem;
 }
 
+.flex {
+  display: flex;
+}
+
 /*=============== PROFILE ===============*/
 .profile {
   position: relative;
@@ -419,6 +423,10 @@ body.dark-theme {
 /* Activate button filter */
 .filter-tab-active {
   background-color: var(--body-color);
+}
+
+.justify-content-center {
+  justify-content: center;
 }
 
 /*=============== FOOTER ===============*/
